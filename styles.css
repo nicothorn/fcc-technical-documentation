@@ -1,13 +1,55 @@
+@font-face {
+
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+  background-color: rgb(29, 29, 29);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+h1, h2, h3 {
+  font-family: "Montserrat", "Open Sans", sans-serif;
+}
+
+a, a:link, a:visited {
+  color: rgb(144, 216, 144);
+}
+
+a:hover, a:active {
+  background-color: rgb(85, 188, 192);
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+h1 a, h1 a:link, h1 a:visited, h1 a:hover, h1 a:active {
+  color: #fff;
+  background-color: transparent;
+  text-decoration: none;
+}
+
 pre {
-  margin-top: -5px;
   margin-left: -100px;
-  margin-bottom: -20px;
+  overflow: hidden;
+}
+
+code {
+  font-family: "Inconsolata", monospace;
+  font-size: 16px;
 }
 
 .code-tag {
-  color: rgb(49, 179, 49);
+  color: rgb(219, 107, 163);
 }
 
 .code-comment {
   color: grey;
+}
+
+.code-block {
+  background-color: rgb(44, 44, 44);
+  color: rgb(255, 255, 255);
+  margin: 10px 2% 10px 5%;
+  padding-top: 2px;
 }
