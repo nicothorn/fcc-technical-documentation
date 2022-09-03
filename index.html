@@ -52,13 +52,13 @@
           <p>You might wonder why this is so important. After all, you can use a combination of CSS and JavaScript to make just about any HTML element behave in whatever way you want. For example, a control button to play a video on your site could be marked up like this:</p>
           <pre>
             <code>
-              &lt;<span class="code tag">div</span>&gt;Play video&lt;/<span class="code tag">div</span>&gt;
+              &lt;<span class="code-tag">div</span>&gt;Play video&lt;/<span class="code-tag">div</span>&gt;
             </code>
           </pre>
           <p>But as you'll see in greater detail later on, it makes sense to use the correct element for the job:</p>
           <pre>
             <code>
-              &lt;<span class="code tag">button</span>&gt;Play video&lt;/<span class="code tag">button&gt;
+              &lt;<span class="code-tag">button</span>&gt;Play video&lt;/<span class="code-tag">button&gt;
             </code>
           </pre>
           <p>Not only do HTML <code>&lt;button&gt;&lt;/button&gt;</code>s have some suitable styling applied by default (which you will probably want to override), they also have built-in keyboard accessibility — users can navigate between buttons using the Tab key and activate their selection using Return or Enter.</p>
@@ -93,25 +93,25 @@
           <p>One of the best accessibility aids a screen reader user can have is an excellent content structure with headings, paragraphs, lists, etc. An excellent semantic example might look something like the following:</p>
           <pre>
             <code>
-              &lt;<span class="code tag">h1</span>&gt;My heading&lt;/<span class="code tag">h1</span>&gt;
+              &lt;<span class="code-tag">h1</span>&gt;My heading&lt;/<span class="code-tag">h1</span>&gt;
               
-              &lt;<span class="code tag">p</span>&gt;This is the first section of my document.&lt;/<span class="code tag">p</span>&gt;
+              &lt;<span class="code-tag">p</span>&gt;This is the first section of my document.&lt;/<span class="code-tag">p</span>&gt;
               
-              &lt;<span class="code tag">p</span>&gt;I'll add another paragraph here too.&lt;/<span class="code tag">p</span>&gt;
+              &lt;<span class="code-tag">p</span>&gt;I'll add another paragraph here too.&lt;/<span class="code-tag">p</span>&gt;
               
-              &lt;<span class="code tag">ol</span>&gt;
-                &lt;<span class="code tag">li</span>&gt;Here is&lt;/<span class="code tag">li</span>&gt;
-                &lt;<span class="code tag">li</span>&gt;a list for&lt;/<span class="code tag">li</span>&gt;
-                &lt;<span class="code tag">li</span>&gt;you to read&lt;/<span class="code tag">li</span>&gt;
-              &lt;/<span class="code tag">ol</span>&gt;
+              &lt;<span class="code-tag">ol</span>&gt;
+                &lt;<span class="code-tag">li</span>&gt;Here is&lt;/<span class="code-tag">li</span>&gt;
+                &lt;<span class="code-tag">li</span>&gt;a list for&lt;/<span class="code-tag">li</span>&gt;
+                &lt;<span class="code-tag">li</span>&gt;you to read&lt;/<span class="code-tag">li</span>&gt;
+              &lt;/<span class="code-tag">ol</span>&gt;
               
-              &lt;<span class="code tag">h2</span>&gt;My subheading&lt;/<span class="code tag">h2</span>&gt;
+              &lt;<span class="code-tag">h2</span>&gt;My subheading&lt;/<span class="code-tag">h2</span>&gt;
               
-              &lt;<span class="code tag">p</span>&gt;This is the first subsection of my document. I'd love people to be able to find this content!&lt;/<span class="code tag">p</span>&gt;
+              &lt;<span class="code-tag">p</span>&gt;This is the first subsection of my document. I'd love people to be able to find this content!&lt;/<span class="code-tag">p</span>&gt;
               
-              &lt;<span class="code tag">h2</span>&gt;My 2nd subheading&lt;/<span class="code tag">h2</span>&gt;
+              &lt;<span class="code-tag">h2</span>&gt;My 2nd subheading&lt;/<span class="code-tag">h2</span>&gt;
               
-              &lt;<span class="code tag">p</span>&gt;This is the second subsection of my content, which I think is more interesting than the last one.&lt;/<span class="code tag">p</span>&gt;
+              &lt;<span class="code-tag">p</span>&gt;This is the second subsection of my content, which I think is more interesting than the last one.&lt;/<span class="code-tag">p</span>&gt;
             </code>
           </pre>
           <p>We've prepared a version with longer text for you to try out with a screen reader (see <a target="_blank" href="https://mdn.github.io/learning-area/accessibility/html/good-semantics.html">good-semantics.html</a>). If you try navigating through this, you'll see that this is pretty easy to navigate:</p>
@@ -124,24 +124,24 @@
           <p>People sometimes write headings, paragraphs, etc. using presentational HTML and line breaks, something like the following:</p>
           <pre>
             <code>
-              &lt;<span class="code tag">font size="7"</span>&gt;My heading&lt;/<span class="code tag">font</span>&gt;
-              &lt;<span class="code tag">br</span>&gt;&lt;<span class="code tag">br</span>&gt;
+              &lt;<span class="code-tag">font size="7"</span>&gt;My heading&lt;/<span class="code-tag">font</span>&gt;
+              &lt;<span class="code-tag">br</span>&gt;&lt;<span class="code-tag">br</span>&gt;
               This is the first section of my document.
-              &lt;<span class="code tag">br</span>&gt;&lt;<span class="code tag">br</span>&gt;
+              &lt;<span class="code-tag">br</span>&gt;&lt;<span class="code-tag">br</span>&gt;
               I'll add another paragraph here too.
-              &lt;<span class="code tag">br</span>&gt;&lt;<span class="code tag">br</span>&gt;
+              &lt;<span class="code-tag">br</span>&gt;&lt;<span class="code-tag">br</span>&gt;
               1. Here is
-              &lt;<span class="code tag">br</span>&gt;&lt;<span class="code tag">br</span>&gt;
+              &lt;<span class="code-tag">br</span>&gt;&lt;<span class="code-tag">br</span>&gt;
               2. a list for
-              &lt;<span class="code tag">br</span>&gt;&lt;<span class="code tag">br</span>&gt;
+              &lt;<span class="code-tag">br</span>&gt;&lt;<span class="code-tag">br</span>&gt;
               3. you to read
-              &lt;<span class="code tag">br</span>&gt;&lt;<span class="code tag">br</span>&gt;
-              &lt;<span class="code tag">font size="5"</span>&gt;My subheading&lt;/<span class="code tag">font</span>&gt;
-              &lt;<span class="code tag">br</span>&gt;&lt;<span class="code tag">br</span>&gt;
+              &lt;<span class="code-tag">br</span>&gt;&lt;<span class="code-tag">br</span>&gt;
+              &lt;<span class="code-tag">font size="5"</span>&gt;My subheading&lt;/<span class="code-tag">font</span>&gt;
+              &lt;<span class="code-tag">br</span>&gt;&lt;<span class="code-tag">br</span>&gt;
               This is the first subsection of my document. I'd love people to be able to find this content!
-              &lt;<span class="code tag">br</span>&gt;&lt;<span class="code tag">br</span>&gt;
-              &lt;<span class="code tag">font size="5"</span>&gt;My 2nd subheading&lt;/<span class="code tag">font</span>&gt;
-              &lt;<span class="code tag">br</span>&gt;&lt;<span class="code tag">br</span>&gt;
+              &lt;<span class="code-tag">br</span>&gt;&lt;<span class="code-tag">br</span>&gt;
+              &lt;<span class="code-tag">font size="5"</span>&gt;My 2nd subheading&lt;/<span class="code-tag">font</span>&gt;
+              &lt;<span class="code-tag">br</span>&gt;&lt;<span class="code-tag">br</span>&gt;
               This is the second subsection of my content. I think is more interesting than the last one.
             </code>
           </pre>
@@ -171,107 +171,107 @@
           <p>Try our example <a href="https://mdn.github.io/learning-area/accessibility/html/table-layout.html">table-layout.html</a> example, which looks something like this:</p>
           <pre>
             <code>
-              &lt;<span class="code tag">table width="1200"</span>&gt;
-                    <span class="code comment">&lt;!-- main heading row --&gt;</span>
-                    &lt;<span class="code tag">tr id="heading"</span>&gt;
-                      &lt;<span class="code tag">td colspan="6"</span>&gt;
+              &lt;<span class="code-tag">table width="1200"</span>&gt;
+                    <span class="code-comment">&lt;!-- main heading row --&gt;</span>
+                    &lt;<span class="code-tag">tr id="heading"</span>&gt;
+                      &lt;<span class="code-tag">td colspan="6"</span>&gt;
               
-                        &lt;<span class="code tag">h1 align="center"</span>&gt;Header&lt;/<span class="code tag">h1</span>&gt;
+                        &lt;<span class="code-tag">h1 align="center"</span>&gt;Header&lt;/<span class="code-tag">h1</span>&gt;
               
-                      &lt;/<span class="code tag">td</span>&gt;
-                    &lt;/<span class="code tag">tr</span>&gt;
-                    <span class="code comment">&lt;!-- nav menu row  --&gt;</span>
-                    &lt;<span class="code tag">tr id="nav" bgcolor="#ffffff"</span>&gt;
-                      &lt;<span class="code tag">td width="200"</span>&gt;
-                        &lt;<span class="code tag">a href="#" align="center"</span>&gt;Home&lt;/<span class="code tag">a</span>&gt;
-                      &lt;/<span class="code tag">td</span>&gt;
-                      &lt;<span class="code tag">td width="200"</span>&gt;
-                        &lt;<span class="code tag">a href="#" align="center"</span>&gt;Our team&lt;/<span class="code tag">a</span>&gt;
-                      &lt;/<span class="code tag">td</span>&gt;
-                      &lt;<span class="code tag">td width="200"</span>&gt;
-                        &lt;<span class="code tag">a href="#" align="center"</span>&gt;Projects&lt;/<span class="code tag">a</span>&gt;
-                      &lt;/<span class="code tag">td</span>&gt;
-                      &lt;<span class="code tag">td width="200"</span>&gt;
-                        &lt;<span class="code tag">a href="#" align="center"</span>&gt;Contact&lt;/<span class="code tag">a</span>&gt;
-                      &lt;/<span class="code tag">td</span>&gt;
-                      &lt;<span class="code tag">td width="300"</span>&gt;
-                        &lt;<span class="code tag">form width="300"</span>&gt;
-                          &lt;<span class="code tag">input type="search" name="q" placeholder="Search query" width="300"</span>&gt;
-                        &lt;/<span class="code tag">form</span>&gt;
-                      &lt;/<span class="code tag">td</span>&gt;
-                      &lt;<span class="code tag">td width="100"</span>&gt;
-                        &lt;<span class="code tag">button width="100"</span>&gt;Go!&lt;/<span class="code tag">button</span>&gt;
-                      &lt;/<span class="code tag">td</span>&gt;
-                    &lt;/<span class="code tag">tr</span>&gt;
-                    <span class="code comment">&lt;!-- spacer row --&gt;</span>
-                    &lt;<span class="code tag">tr id="spacer" height="10"</span>&gt;
-                      &lt;<span class="code tag">td</span>&gt;
+                      &lt;/<span class="code-tag">td</span>&gt;
+                    &lt;/<span class="code-tag">tr</span>&gt;
+                    <span class="code-comment">&lt;!-- nav menu row  --&gt;</span>
+                    &lt;<span class="code-tag">tr id="nav" bgcolor="#ffffff"</span>&gt;
+                      &lt;<span class="code-tag">td width="200"</span>&gt;
+                        &lt;<span class="code-tag">a href="#" align="center"</span>&gt;Home&lt;/<span class="code-tag">a</span>&gt;
+                      &lt;/<span class="code-tag">td</span>&gt;
+                      &lt;<span class="code-tag">td width="200"</span>&gt;
+                        &lt;<span class="code-tag">a href="#" align="center"</span>&gt;Our team&lt;/<span class="code-tag">a</span>&gt;
+                      &lt;/<span class="code-tag">td</span>&gt;
+                      &lt;<span class="code-tag">td width="200"</span>&gt;
+                        &lt;<span class="code-tag">a href="#" align="center"</span>&gt;Projects&lt;/<span class="code-tag">a</span>&gt;
+                      &lt;/<span class="code-tag">td</span>&gt;
+                      &lt;<span class="code-tag">td width="200"</span>&gt;
+                        &lt;<span class="code-tag">a href="#" align="center"</span>&gt;Contact&lt;/<span class="code-tag">a</span>&gt;
+                      &lt;/<span class="code-tag">td</span>&gt;
+                      &lt;<span class="code-tag">td width="300"</span>&gt;
+                        &lt;<span class="code-tag">form width="300"</span>&gt;
+                          &lt;<span class="code-tag">input type="search" name="q" placeholder="Search query" width="300"</span>&gt;
+                        &lt;/<span class="code-tag">form</span>&gt;
+                      &lt;/<span class="code-tag">td</span>&gt;
+                      &lt;<span class="code-tag">td width="100"</span>&gt;
+                        &lt;<span class="code-tag">button width="100"</span>&gt;Go!&lt;/<span class="code-tag">button</span>&gt;
+                      &lt;/<span class="code-tag">td</span>&gt;
+                    &lt;/<span class="code-tag">tr</span>&gt;
+                    <span class="code-comment">&lt;!-- spacer row --&gt;</span>
+                    &lt;<span class="code-tag">tr id="spacer" height="10"</span>&gt;
+                      &lt;<span class="code-tag">td</span>&gt;
               
-                      &lt;/<span class="code tag">td</span>&gt;
-                    &lt;/<span class="code tag">tr</span>&gt;
-                    <span class="code comment">&lt;!-- main content and aside row --&gt;</span>
-                    &lt;<span class="code tag">tr id="main"</span>&gt;
-                      &lt;<span class="code tag">td id="content" colspan="4" bgcolor="#ffffff"</span>&gt;
+                      &lt;/<span class="code-tag">td</span>&gt;
+                    &lt;/<span class="code-tag">tr</span>&gt;
+                    <span class="code-comment">&lt;!-- main content and aside row --&gt;</span>
+                    &lt;<span class="code-tag">tr id="main"</span>&gt;
+                      &lt;<span class="code-tag">td id="content" colspan="4" bgcolor="#ffffff"</span>&gt;
               
-                        <span class="code comment">&lt;!-- main content goes here --&gt;</span>
-                      &lt;/<span class="code tag">td</span>&gt;
-                      &lt;<span class="code tag">td id="aside" colspan="2" bgcolor="#ff80ff" valign="top"</span>&gt;
-                        &lt;<span class="code tag">h2</span>&gt;Related&lt;/<span class="code tag">h2</span>&gt;
+                        <span class="code-comment">&lt;!-- main content goes here --&gt;</span>
+                      &lt;/<span class="code-tag">td</span>&gt;
+                      &lt;<span class="code-tag">td id="aside" colspan="2" bgcolor="#ff80ff" valign="top"</span>&gt;
+                        &lt;<span class="code-tag">h2</span>&gt;Related&lt;/<span class="code-tag">h2</span>&gt;
               
-                        <span class="code comment">&lt;!-- aside content goes here --&gt;</span>
+                        <span class="code-comment">&lt;!-- aside content goes here --&gt;</span>
               
-                      &lt;/<span class="code tag">td</span>&gt;
-                    &lt;/<span class="code tag">tr</span>&gt;
-                    <span class="code comment">&lt;!-- spacer row --&gt;</span>
-                    &lt;<span class="code tag">tr id="spacer" height="10"</span>&gt;
-                      &lt;<span class="code tag">td</span>&gt;
+                      &lt;/<span class="code-tag">td</span>&gt;
+                    &lt;/<span class="code-tag">tr</span>&gt;
+                    <span class="code-comment">&lt;!-- spacer row --&gt;</span>
+                    &lt;<span class="code-tag">tr id="spacer" height="10"</span>&gt;
+                      &lt;<span class="code-tag">td</span>&gt;
               
-                      &lt;/<span class="code tag">td</span>&gt;
-                    &lt;/<span class="code tag">tr</span>&gt;
-                    <span class="code comment">&lt;!-- footer row --&gt;</span>
-                    &lt;<span class="code tag">tr id="footer" bgcolor="#ffffff"</span>&gt;
-                      &lt;<span class="code tag">td colspan="6"</span>&gt;
-                        &lt;<span class="code tag">p</span>&gt;©Copyright 2050 by nobody. All rights reversed.&lt;/<span class="code tag">p</span>&gt;
-                      &lt;/<span class="code tag">td</span>&gt;
-                    &lt;/<span class="code tag">tr</span>&gt;
-                  &lt;/<span class="code tag">table</span>&gt;
+                      &lt;/<span class="code-tag">td</span>&gt;
+                    &lt;/<span class="code-tag">tr</span>&gt;
+                    <span class="code-comment">&lt;!-- footer row --&gt;</span>
+                    &lt;<span class="code-tag">tr id="footer" bgcolor="#ffffff"</span>&gt;
+                      &lt;<span class="code-tag">td colspan="6"</span>&gt;
+                        &lt;<span class="code-tag">p</span>&gt;©Copyright 2050 by nobody. All rights reversed.&lt;/<span class="code-tag">p</span>&gt;
+                      &lt;/<span class="code-tag">td</span>&gt;
+                    &lt;/<span class="code-tag">tr</span>&gt;
+                  &lt;/<span class="code-tag">table</span>&gt;
             </code>
           </pre>
           <p>If you try to navigate this using a screen reader, it will probably tell you that there's a table to be looked at (although some screen readers can guess the difference between table layouts and data tables). You'll then likely (depending on which screen reader you're using) have to go down into the table as an object and look at its features separately, then get out of the table again to carry on navigating the content.</p>
           <p>Table layouts are a relic of the past — they made sense back when CSS support was not widespread in browsers, but now they just create confusion for screen reader users. Additionally, their source code requires more markup, which makes them less flexible and more difficult to maintain. You can verify these claims by comparing your previous experience with a <a href="https://mdn.github.io/learning-area/html/introduction-to-html/document_and_website_structure/">more modern website structure example</a>, which could look something like this:</p>
           <pre>
             <code>
-              &lt;<span class="code tag">header</span>&gt;
-                &lt;<span class="code tag">h1</span>&gt;Header&lt;/<span class="code tag">h1</span>&gt;
-              &lt;/<span class="code tag">header</span>&gt;
+              &lt;<span class="code-tag">header</span>&gt;
+                &lt;<span class="code-tag">h1</span>&gt;Header&lt;/<span class="code-tag">h1</span>&gt;
+              &lt;/<span class="code-tag">header</span>&gt;
               
-              &lt;<span class="code tag">nav</span>&gt;
-                <span class="code comment">&lt;!-- main navigation in here --&gt;</span>
-              &lt;/<span class="code tag">nav</span>&gt;
+              &lt;<span class="code-tag">nav</span>&gt;
+                <span class="code-comment">&lt;!-- main navigation in here --&gt;</span>
+              &lt;/<span class="code-tag">nav</span>&gt;
               
-              <span class="code comment">&lt;!-- Here is our page's main content --&gt;</span>
-              &lt;<span class="code tag">main</span>&gt;
+              <span class="code-comment">&lt;!-- Here is our page's main content --&gt;</span>
+              &lt;<span class="code-tag">main</span>&gt;
               
-                <span class="code comment">&lt;!-- It contains an article --&gt;</span>
-                &lt;<span class="code tag">article</span>&gt;
-                  &lt;<span class="code tag">h2</span>&gt;Article heading&lt;/<span class="code tag">h2</span>&gt;
+                <span class="code-comment">&lt;!-- It contains an article --&gt;</span>
+                &lt;<span class="code-tag">article</span>&gt;
+                  &lt;<span class="code-tag">h2</span>&gt;Article heading&lt;/<span class="code-tag">h2</span>&gt;
               
-                  <span class="code comment">&lt;!-- article content in here --&gt;</span>
-                &lt;/<span class="code tag">article</span>&gt;
+                  <span class="code-comment">&lt;!-- article content in here --&gt;</span>
+                &lt;/<span class="code-tag">article</span>&gt;
               
-                &lt;<span class="code tag">aside</span>&gt;
-                  &lt;<span class="code tag">h2</span>&gt;Related&lt;/<span class="code tag">h2</span>&gt;
+                &lt;<span class="code-tag">aside</span>&gt;
+                  &lt;<span class="code-tag">h2</span>&gt;Related&lt;/<span class="code-tag">h2</span>&gt;
               
-                  <span class="code comment">&lt;!-- aside content in here --&gt;</span>
-                &lt;/<span class="code tag">aside</span>&gt;
+                  <span class="code-comment">&lt;!-- aside content in here --&gt;</span>
+                &lt;/<span class="code-tag">aside</span>&gt;
               
-              &lt;/<span class="code tag">main</span>&gt;
+              &lt;/<span class="code-tag">main</span>&gt;
               
-              <span class="code comment">&lt;!-- And here is our main footer that is used across all the pages of our website --&gt;</span>
+              <span class="code-comment">&lt;!-- And here is our main footer that is used across all the pages of our website --&gt;</span>
               
-              &lt;<span class="code tag">footer</span>&gt;
-                <span class="code comment">&lt;!-- footer content in here --&gt;</span>
-              &lt;/<span class="code tag">footer</span>&gt;
+              &lt;<span class="code-tag">footer</span>&gt;
+                <span class="code-comment">&lt;!-- footer content in here --&gt;</span>
+              &lt;/<span class="code-tag">footer</span>&gt;
             </code>
           </pre>
           <p>If you try our more modern structure example with a screen reader, you'll see that the layout markup no longer gets in the way and confuses the content readout. It is also much leaner and smaller in terms of code size, which means easier to maintain code, and less bandwidth for the user to download (particularly prevalent for those on slow connections).</p>
@@ -299,50 +299,50 @@
           <p>You essentially get this behavior for free, just by using the appropriate elements, e.g.</p>
           <pre>
             <code>
-              &lt;<span class="code tag">h1</span>&gt;Links&lt;/<span class="code tag">h1</span>&gt;
+              &lt;<span class="code-tag">h1</span>&gt;Links&lt;/<span class="code-tag">h1</span>&gt;
               
-              &lt;<span class="code tag">p</span>&gt;This is a link to &lt;<span class="code tag">a href="https://www.mozilla.org"</span>&gt;Mozilla&lt;/<span class="code tag">a</span>&gt;.&lt;/<span class="code tag">p</span>&gt;
+              &lt;<span class="code-tag">p</span>&gt;This is a link to &lt;<span class="code-tag">a href="https://www.mozilla.org"</span>&gt;Mozilla&lt;/<span class="code-tag">a</span>&gt;.&lt;/<span class="code-tag">p</span>&gt;
               
-              &lt;<span class="code tag">p</span>&gt;Another link, to the &lt;<span class="code tag">a href="https://developer.mozilla.org"</span>&gt;Mozilla Developer Network&lt;/<span class="code tag">a</span>&gt;.&lt;/<span class="code tag">p</span>&gt;
+              &lt;<span class="code-tag">p</span>&gt;Another link, to the &lt;<span class="code-tag">a href="https://developer.mozilla.org"</span>&gt;Mozilla Developer Network&lt;/<span class="code-tag">a</span>&gt;.&lt;/<span class="code-tag">p</span>&gt;
               
-              &lt;<span class="code tag">h2</span>&gt;Buttons&lt;/<span class="code tag">h2</span>&gt;
+              &lt;<span class="code-tag">h2</span>&gt;Buttons&lt;/<span class="code-tag">h2</span>&gt;
               
-              &lt;<span class="code tag">p</span>&gt;
-                &lt;<span class="code tag">button data-message="This is from the first button"</span>&gt;Click me!&lt;/<span class="code tag">button</span>&gt;
-                &lt;<span class="code tag">button data-message="This is from the second button"</span>&gt;Click me too!&lt;/<span class="code tag">button</span>&gt;
-                &lt;<span class="code tag">button data-message="This is from the third button"</span>&gt;And me!&lt;/<span class="code tag">button</span>&gt;
-              &lt;/<span class="code tag">p</span>&gt;
+              &lt;<span class="code-tag">p</span>&gt;
+                &lt;<span class="code-tag">button data-message="This is from the first button"</span>&gt;Click me!&lt;/<span class="code-tag">button</span>&gt;
+                &lt;<span class="code-tag">button data-message="This is from the second button"</span>&gt;Click me too!&lt;/<span class="code-tag">button</span>&gt;
+                &lt;<span class="code-tag">button data-message="This is from the third button"</span>&gt;And me!&lt;/<span class="code-tag">button</span>&gt;
+              &lt;/<span class="code-tag">p</span>&gt;
               
-              &lt;<span class="code tag">h2</span>&gt;Form&lt;/<span class="code tag">h2</span>&gt;
+              &lt;<span class="code-tag">h2</span>&gt;Form&lt;/<span class="code-tag">h2</span>&gt;
               
-              &lt;<span class="code tag">form</span>&gt;
-                &lt;<span class="code tag">div</span>&gt;
-                  &lt;<span class="code tag">label for="name"</span>&gt;Fill in your name:&lt;/<span class="code tag">label</span>&gt;
-                  &lt;<span class="code tag">input type="text" id="name" name="name"</span>&gt;
-                &lt;/<span class="code tag">div</span>&gt;
-                &lt;<span class="code tag">div</span>&gt;
-                  &lt;<span class="code tag">label for="age"</span>&gt;Enter your age:&lt;/<span class="code tag">label</span>&gt;
-                  &lt;<span class="code tag">input type="text" id="age" name="age"</span>&gt;
-                &lt;/<span class="code tag">div</span>&gt;
-                &lt;<span class="code tag">div</span>&gt;
-                  &lt;<span class="code tag">label for="mood"</span>&gt;Choose your mood:&lt;/<span class="code tag">label</span>&gt;
-                  &lt;<span class="code tag">select id="mood" name="mood"</span>&gt;
-                    &lt;<span class="code tag">option</span>&gt;Happy&lt;/<span class="code tag">option</span>&gt;
-                    &lt;<span class="code tag">option</span>&gt;Sad&lt;/<span class="code tag">option</span>&gt;
-                    &lt;<span class="code tag">option</span>&gt;Angry&lt;/<span class="code tag">option</span>&gt;
-                    &lt;<span class="code tag">option</span>&gt;Worried&lt;/<span class="code tag">option</span>&gt;
-                  &lt;/<span class="code tag">select</span>&gt;
-                &lt;/<span class="code tag">div</span>&gt;
-              &lt;/<span class="code tag">form</span>&gt;
+              &lt;<span class="code-tag">form</span>&gt;
+                &lt;<span class="code-tag">div</span>&gt;
+                  &lt;<span class="code-tag">label for="name"</span>&gt;Fill in your name:&lt;/<span class="code-tag">label</span>&gt;
+                  &lt;<span class="code-tag">input type="text" id="name" name="name"</span>&gt;
+                &lt;/<span class="code-tag">div</span>&gt;
+                &lt;<span class="code-tag">div</span>&gt;
+                  &lt;<span class="code-tag">label for="age"</span>&gt;Enter your age:&lt;/<span class="code-tag">label</span>&gt;
+                  &lt;<span class="code-tag">input type="text" id="age" name="age"</span>&gt;
+                &lt;/<span class="code-tag">div</span>&gt;
+                &lt;<span class="code-tag">div</span>&gt;
+                  &lt;<span class="code-tag">label for="mood"</span>&gt;Choose your mood:&lt;/<span class="code-tag">label</span>&gt;
+                  &lt;<span class="code-tag">select id="mood" name="mood"</span>&gt;
+                    &lt;<span class="code-tag">option</span>&gt;Happy&lt;/<span class="code-tag">option</span>&gt;
+                    &lt;<span class="code-tag">option</span>&gt;Sad&lt;/<span class="code-tag">option</span>&gt;
+                    &lt;<span class="code-tag">option</span>&gt;Angry&lt;/<span class="code-tag">option</span>&gt;
+                    &lt;<span class="code-tag">option</span>&gt;Worried&lt;/<span class="code-tag">option</span>&gt;
+                  &lt;/<span class="code-tag">select</span>&gt;
+                &lt;/<span class="code-tag">div</span>&gt;
+              &lt;/<span class="code-tag">form</span>&gt;
             </code>
           </pre>
           <p>This means using links, buttons, form elements, and labels appropriately (including the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label"><code>&lt;label&gt;</code></a> element for form controls).</p>
           <p>However, it is again the case that people sometimes do strange things with HTML. For example, you sometimes see buttons marked up using <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div"><code>&lt;div&gt;</code></a>s, for example:</p>
           <pre>
             <code>
-              &lt;<span class="code tag">div data-message="This is from the first button"</span>&gt;Click me!&lt;/<span class="code tag">div</span>&gt;
-              &lt;<span class="code tag">div data-message="This is from the second button"</span>&gt;Click me too!&lt;/<span class="code tag">div</span>&gt;
-              &lt;<span class="code tag">div data-message="This is from the third button"</span>&gt;And me!&lt;/<span class="code tag">div</span>&gt;
+              &lt;<span class="code-tag">div data-message="This is from the first button"</span>&gt;Click me!&lt;/<span class="code-tag">div</span>&gt;
+              &lt;<span class="code-tag">div data-message="This is from the second button"</span>&gt;Click me too!&lt;/<span class="code-tag">div</span>&gt;
+              &lt;<span class="code-tag">div data-message="This is from the third button"</span>&gt;And me!&lt;/<span class="code-tag">div</span>&gt;
             </code>
           </pre>
           <p>But using such code is not advised — you immediately lose the native keyboard accessibility you would have had if you'd just used <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button"><code>&lt;button&gt;</code></a> elements, plus you don't get any of the default CSS styling that buttons get.</p>
@@ -356,9 +356,9 @@
           <p>Adding such advantages back in takes a bit of work (you can see an example in our <a href="https://mdn.github.io/learning-area/tools-testing/cross-browser-testing/accessibility/fake-div-buttons.html">fake-div-buttons.html</a> example — also see the <a href="https://github.com/mdn/learning-area/blob/main/tools-testing/cross-browser-testing/accessibility/fake-div-buttons.html">source code</a>). Here we've given our fake <code>&lt;div&gt;</code> buttons the ability to be focused (including via tab) by giving each one the attribute <code>tabindex="0"</code>:</p>
           <pre>
             <code>
-              &lt;<span class="code tag">div data-message="This is from the first button" tabindex="0"</span>&gt;Click me!&lt;/<span class="code tag">div</span>&gt;
-              &lt;<span class="code tag">div data-message="This is from the second button" tabindex="0"</span>&gt;Click me too!&lt;/<span class="code tag">div</span>&gt;
-              &lt;<span class="code tag">div data-message="This is from the third button" tabindex="0"</span>&gt;And me!&lt;/<span class="code tag">div</span>&gt;
+              &lt;<span class="code-tag">div data-message="This is from the first button" tabindex="0"</span>&gt;Click me!&lt;/<span class="code-tag">div</span>&gt;
+              &lt;<span class="code-tag">div data-message="This is from the second button" tabindex="0"</span>&gt;Click me too!&lt;/<span class="code-tag">div</span>&gt;
+              &lt;<span class="code-tag">div data-message="This is from the third button" tabindex="0"</span>&gt;And me!&lt;/<span class="code-tag">div</span>&gt;
             </code>
           </pre>
           <p>Basically, the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes#attr-tabindex">tabindex</a> attribute is primarily intended to allow tabbable elements to have a custom tab order (specified in positive numerical order), instead of just being tabbed through in their default source order. This is nearly always a bad idea, as it can cause major confusion. Use it only if you really need to, for example, if the layout shows things in a very different visual order to the source code, and you want to make things work more logically. There are two other options for <code>tabindex</code>:</p>
@@ -369,9 +369,9 @@
           <p>While the above addition allows us to tab to the buttons, it does not allow us to activate them via the <kbd>Enter</kbd>/<kbd>Return</kbd> key. To do that, we had to add the following bit of JavaScript trickery:</p>
           <pre>
             <code>
-              <span class="code tag">document.onkeydown</span> = (e) =&gt; {
+              <span class="code-tag">document.onkeydown</span> = (e) =&gt; {
                 if (e.key === "Enter") { // The Enter/Return key
-                  document.activeElement.<span class="code tag">click</span>();
+                  document.activeElement.<span class="code-tag">click</span>();
                 }
               };
             </code>
@@ -391,13 +391,13 @@
           <p>Make sure your labels make sense out of context, read on their own, as well as in the context of the paragraph they are in. For example, the following shows an example of good link text:</p>
           <pre>
             <code>
-              &lt;<span class="code tag">p</span>&gt;Whales are really awesome creatures. &lt;<span class="code tag">a href="whales.html"</span>&gt;Find out more about whales&lt;/<span class="code tag">a</span>&gt;.&lt;/<span class="code tag">p</span>&gt;
+              &lt;<span class="code-tag">p</span>&gt;Whales are really awesome creatures. &lt;<span class="code-tag">a href="whales.html"</span>&gt;Find out more about whales&lt;/<span class="code-tag">a</span>&gt;.&lt;/<span class="code-tag">p</span>&gt;
             </code>
           </pre>
           <p>but this is bad link text:</p>
           <pre>
             <code>
-              &lt;<span class="code tag">p</span>&gt;Whales are really awesome creatures. To find more out about whales, &lt;<span class="code tag">a href="whales.html"</span>&gt;click here&lt;/<span class="code tag">a</span>&gt;.&lt;/<span class="code tag">p</span>&gt;
+              &lt;<span class="code-tag">p</span>&gt;Whales are really awesome creatures. To find more out about whales, &lt;<span class="code-tag">a href="whales.html"</span>&gt;click here&lt;/<span class="code-tag">a</span>&gt;.&lt;/<span class="code-tag">p</span>&gt;
             </code>
           </pre>
           <div class="note">
@@ -406,17 +406,17 @@
           <p>Form labels are also important for giving you a clue about what you need to enter into each form input. The following seems like a reasonable enough example:</p>
           <pre>
             <code>
-              Fill in your name: &lt;<span class="code tag">input type="text" id="name" name="name"</span>&gt;
+              Fill in your name: &lt;<span class="code-tag">input type="text" id="name" name="name"</span>&gt;
             </code>
           </pre>
           <p>However, this is not so useful for disabled users. There is nothing in the above example to associate the label unambiguously with the form input and make it clear how to fill it in if you cannot see it. If you access this with some screen readers, you may only be given a description along the lines of "edit text."</p>
           <p>The following is a much better example:</p>
           <pre>
             <code>
-              &lt;<span class="code tag">div</span>&gt;
-                &lt;<span class="code tag">label for="name"</span>&gt;Fill in your name:&lt;/<span class="code tag">label</span>&gt;
-                &lt;<span class="code tag">input type="text" id="name" name="name"</span>&gt;
-              &lt;/<span class="code tag">div</span>&gt;
+              &lt;<span class="code-tag">div</span>&gt;
+                &lt;<span class="code-tag">label for="name"</span>&gt;Fill in your name:&lt;/<span class="code-tag">label</span>&gt;
+                &lt;<span class="code-tag">input type="text" id="name" name="name"</span>&gt;
+              &lt;/<span class="code-tag">div</span>&gt;
             </code>
           </pre>
           <p>With code like this, the label will be clearly associated with the input; the description will be more like "Fill in your name: edit text."</p>

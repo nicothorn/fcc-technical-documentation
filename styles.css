@@ -4,10 +4,10 @@ pre {
   margin-bottom: -20px;
 }
 
-.code.tag {
+.code-tag {
   color: rgb(49, 179, 49);
 }
 
-.code.comment {
+.code-comment {
   color: grey;
 }
