@@ -51,11 +51,15 @@
           <p>As you learn more about HTML — read more resources, look at more examples, etc. — you'll keep seeing a common theme: the importance of using semantic HTML (sometimes called POSH, or Plain Old Semantic HTML). This means using the correct HTML elements for their intended purpose as much as possible.</p>
           <p>You might wonder why this is so important. After all, you can use a combination of CSS and JavaScript to make just about any HTML element behave in whatever way you want. For example, a control button to play a video on your site could be marked up like this:</p>
           <pre>
-            <code>&lt;div&gt;Play video&lt;/div&gt;</code>
+            <code>
+              &lt;div&gt;Play video&lt;/div&gt;
+            </code>
           </pre>
           <p>But as you'll see in greater detail later on, it makes sense to use the correct element for the job:</p>
           <pre>
-            <code>&lt;button&gt;Play video&lt;/button&gt;</code>
+            <code>
+              &lt;button&gt;Play video&lt;/button&gt;
+            </code>
           </pre>
           <p>Not only do HTML <code>&lt;button&gt;&lt;/button&gt;</code>s have some suitable styling applied by default (which you will probably want to override), they also have built-in keyboard accessibility — users can navigate between buttons using the Tab key and activate their selection using Return or Enter.</p>
           <p>Semantic HTML doesn't take any longer to write than non-semantic (bad) markup if you do it consistently from the start of your project. Even better, semantic markup has other benefits beyond accessibility:</p>
@@ -386,18 +390,24 @@
           <img src="./images/voiceover-formcontrols.png" alt="List of form input labels being listed by VoiceOver software on Mac. This list contains meaningless labels like 'happy menu button` given to various form controls like button, textfield and link" width="802" height="604" loading="lazy" />
           <p>Make sure your labels make sense out of context, read on their own, as well as in the context of the paragraph they are in. For example, the following shows an example of good link text:</p>
           <pre>
-            <code>&lt;p&gt;Whales are really awesome creatures. &lt;a href="whales.html"&gt;Find out more about whales&lt;/a&gt;.&lt;/p&gt</code>
+            <code>
+              &lt;p&gt;Whales are really awesome creatures. &lt;a href="whales.html"&gt;Find out more about whales&lt;/a&gt;.&lt;/p&gt;
+            </code>
           </pre>
           <p>but this is bad link text:</p>
           <pre>
-            <code>&lt;p&gt;Whales are really awesome creatures. To find more out about whales, &lt;a href="whales.html"&gt;click here&lt;/a&gt;.&lt;/p&gt;</code>
+            <code>
+              &lt;p&gt;Whales are really awesome creatures. To find more out about whales, &lt;a href="whales.html"&gt;click here&lt;/a&gt;.&lt;/p&gt;
+            </code>
           </pre>
           <div class="note">
             <p><strong>Note:</strong> You can find a lot more about link implementation and best practices in our <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks">Creating hyperlinks</a> article. You can also see some good and bad examples at <a href="https://mdn.github.io/learning-area/accessibility/html/good-links.html">good-links.html</a> and <a href="https://mdn.github.io/learning-area/accessibility/html/bad-links.html">bad-links.html</a>.</p>
           </div>
           <p>Form labels are also important for giving you a clue about what you need to enter into each form input. The following seems like a reasonable enough example:</p>
           <pre>
-            <code>Fill in your name: &lt;input type="text" id="name" name="name"&gt;</code>
+            <code>
+              Fill in your name: &lt;input type="text" id="name" name="name"&gt;
+            </code>
           </pre>
           <p>However, this is not so useful for disabled users. There is nothing in the above example to associate the label unambiguously with the form input and make it clear how to fill it in if you cannot see it. If you access this with some screen readers, you may only be given a description along the lines of "edit text."</p>
           <p>The following is a much better example:</p>
