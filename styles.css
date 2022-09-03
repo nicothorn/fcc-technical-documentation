@@ -1,4 +1,13 @@
 pre {
+  margin-top: -5px;
   margin-left: -100px;
   margin-bottom: -20px;
+}
+
+.code.tag {
+  color: rgb(49, 179, 49);
+}
+
+.code.comment {
+  color: grey;
 }
