@@ -5,3 +5,4 @@ My main goals for this project are:
 
 - to make a responsive page that works well on any device
 - practice making good, atomic git commits
+- practice web accessibility HTML and CSS standards
