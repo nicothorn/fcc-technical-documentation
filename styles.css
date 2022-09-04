@@ -11,20 +11,20 @@ html {
   line-height: 160%;
 }
 
-h1, h2, h3, h1 a, h1 a:link, h1 a:visited, h1 a:hover, h1 a:active {
+h1, h2, h3, nav h1 a, nav h1 a:link, nav h1 a:visited, nav h1 a:hover, nav h1 a:active {
   font-family: "Montserrat", "Open Sans", sans-serif;
   color: rgb(167, 167, 167);
 }
 
 a, a:link, a:visited {
-  color: rgb(85, 188, 192);
+  color: rgb(144, 216, 144);
   font-weight: bolder;
   text-decoration: none;
   border-bottom: 3px solid rgb(167, 167, 167);
 }
 
 a:hover, a:active {
-  color: rgb(144, 216, 144);
+  color: rgb(85, 188, 192);
   border-bottom: none;
 }
 
@@ -33,6 +33,7 @@ main a {
 }
 
 nav a, nav a:link, nav a:visited, nav a:hover, nav a:active {
+  color: rgb(85, 188, 192);
   text-decoration: none;
   border-bottom: none;
 }
@@ -44,6 +45,11 @@ nav a, nav a:link, nav a:visited, nav a:hover, nav a:active {
   left: 0;
   height: 100%;
   border-right: 3px solid #000;
+  background-color: rgb(44, 44, 44);
+}
+
+#navbar h1 {
+  padding-left: 10px;
 }
 
 ol#nav-list {
@@ -75,7 +81,7 @@ ol#nav-list {
   position: absolute;
   margin-left: 310px;
   padding: 20px;
-  
+
 }
 
 strong {
