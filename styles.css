@@ -3,32 +3,37 @@ html {
   background-color: rgb(29, 29, 29);
   color: rgb(255, 255, 255);
   font-size: 16px;
+  line-height: 160%;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h1 a, h1 a:link, h1 a:visited, h1 a:hover, h1 a:active {
   font-family: "Montserrat", "Open Sans", sans-serif;
   color: rgb(167, 167, 167);
 }
 
 a, a:link, a:visited {
-  color: rgb(144, 216, 144);
-  font-weight: bold;
+  color: rgb(85, 188, 192);
+  font-weight: bolder;
   text-decoration: none;
+  border-bottom: 3px solid rgb(167, 167, 167);
 }
 
 a:hover, a:active {
-  color: rgb(85, 188, 192);
-  border-bottom: 3px solid rgb(167, 167, 167);
+  color: rgb(144, 216, 144);
+  border-bottom: none;
+}
+
+main a {
+  padding: 0 3px 0 2px;
 }
 
 strong {
   font-weight: bold;
 }
 
-h1 a, h1 a:link, h1 a:visited, h1 a:hover, h1 a:active {
-  color: #fff;
-  background-color: transparent;
+nav a, nav a:link, nav a:visited, nav a:hover, nav a:active {
   text-decoration: none;
+  border-bottom: none;
 }
 
 pre {
@@ -43,7 +48,7 @@ code {
 
 p code, li code {
   background-color: rgb(65, 65, 65);
-  padding: 0 5px;
+  padding: 0 5px 1px 4px;
 }
 
 .code-tag {
