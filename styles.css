@@ -16,6 +16,10 @@ h1, h2, h3, nav h1 a, nav h1 a:link, nav h1 a:visited, nav h1 a:hover, nav h1 a:
   color: rgb(167, 167, 167);
 }
 
+h2, h3 {
+  margin-top: 30px;
+}
+
 a, a:link, a:visited {
   color: rgb(144, 216, 144);
   font-weight: bolder;
