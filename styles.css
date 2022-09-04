@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   font-family: "Open Sans", sans-serif;
   background-color: rgb(29, 29, 29);
@@ -32,9 +37,17 @@ nav a, nav a:link, nav a:visited, nav a:hover, nav a:active {
   border-bottom: none;
 }
 
-#nav-list ol {
-  padding: 0px;
-  margin: 0px;
+#navbar {
+  position: fixed;
+  min-width: 300px;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-right: 3px solid #000;
+}
+
+ol#nav-list {
+  margin-left: -50px;
 }
 
 #nav-list li {
@@ -58,7 +71,11 @@ nav a, nav a:link, nav a:visited, nav a:hover, nav a:active {
   border-bottom: 3px solid #000;
 }
 
-#nav-list li:hover {
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  
 }
 
 strong {
